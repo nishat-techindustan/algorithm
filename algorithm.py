@@ -79,5 +79,86 @@ def starDiagonal(num):
         print(' ', end='')
     print('')
   
-print(starDiagonal(9))
+# print(starDiagonal(20))
+print('------------------------------------')
+def N(num):
+  for i in range(0,num):
+    for j in range(0, num):
+      if(j == 0 or j == num - 1):
+        print('*', end='')
+      elif (i == j):
+        print('*', end='')
+      else:
+        print(' ', end='')
+    print('')
+  
+print(N(20))
+
+def I(num):
+  mid = int(num / 2)
+  for i in range(0,num):
+    for j in range(0, num):
+      if(j == mid):
+        print('*',end='')
+      else:
+        print(' ', end='')
+    print('')
+  
+print(I(20))
+
+def S(num):
+  mid = int(num / 2)
+  for i in range(0,num):
+    for j in range(0, num):
+      if(i == 0  or i == mid or j == num - 1 or i == num - 1):
+        print('*', end='')
+      elif(i <= mid):
+        print('', end='')
+      else:
+        print(' ', end='')
+    print('')
+
+print(S(21))
+
+def H(num):
+  mid = int(num / 2)
+  for i in range(0,num):
+    for j in range(0, num):
+      if(j == 0 or j == num - 1):
+        print('*', end='')
+      elif(i == mid):
+        print('*', end='')
+      else:
+        print(' ', end='')
+    print('')
+
+print(H(21))
+
+def A(num):
+  mid = int(num / 2)
+  for i in range(0,num):
+    for j in range(0, num):
+      if(i == 0 or j == 0 or j == num - 1):
+        print('*', end='')
+      elif(i == mid):
+        print('*', end='')
+      else:
+        print(' ', end='')
+    print('')
+
+print(A(21))
+
+def T(num):
+  mid = int(num / 2)
+  for i in range(0,num):
+    for j in range(0, num):
+      if(i == 0):
+        print('*', end='')
+      elif(j == mid):
+        print('*', end='')
+      else:
+        print(' ', end='')
+    print('')
+
+print(T(21))
 
